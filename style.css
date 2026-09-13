@@ -1,0 +1,166 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f5f7fa;
+}
+
+
+
+.quote-box {
+    width: 700px;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    padding: 45px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+
+    text-align: left;
+
+    border-left: 7px solid #2563eb;
+}
+
+
+.quote-box h1 {
+    color: #111827;
+
+    font-size: 32px;
+
+    margin-bottom: 35px;
+
+    font-weight: 700;
+}
+
+
+.quote-area {
+    position: relative;
+
+    padding: 25px 30px;
+
+    background: #f8fafc;
+
+    border-radius: 12px;
+
+    border: 1px solid #e5e7eb;
+}
+
+
+#quote {
+    color: #374151;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 24px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+
+    padding-top: 15px;
+}
+
+
+#author {
+    display: inline-block;
+
+    padding: 8px 15px;
+
+    background: #dbeafe;
+
+    color: #1d4ed8;
+
+    border-radius: 20px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+
+#generateBtn {
+    width: 100%;
+
+    margin-top: 30px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+#generateBtn:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 18px rgba(37, 99, 235, 0.25);
+}
+
+
+#generateBtn:active {
+    transform: translateY(0);
+}
+
+
+@media (max-width: 700px) {
+
+    .quote-box {
+        width: 100%;
+
+        padding: 30px 20px;
+
+        border-left-width: 5px;
+    }
+
+    .quote-box h1 {
+        font-size: 27px;
+
+        margin-bottom: 30px;
+    }
+
+    .quote-area {
+        padding: 25px 20px;
+    }
+
+    #quote {
+        font-size: 20px;
+    }
+
+    #author {
+        font-size: 14px;
+    }
+}
